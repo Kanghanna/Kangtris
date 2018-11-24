@@ -1,24 +1,22 @@
-
 import java.awt.BorderLayout;
+import java.awt.Color;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-//
+
 public class Tetris extends JFrame {
 
     JLabel statusbar;
 
-
     public Tetris() {
-
         statusbar = new JLabel(" 0");
         add(statusbar, BorderLayout.SOUTH);
         Board board = new Board(this);
         add(board);
         board.start();
-
-        setSize(200, 400);
+        board.setBackground(Color.BLACK);
+        setSize(360, 550);
         setTitle("Tetris");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
    }
@@ -28,7 +26,7 @@ public class Tetris extends JFrame {
    }
 
     public static void main(String[] args) {
-    	game g;
+    	//Early e;
         Tetris game = new Tetris();
         game.setLocationRelativeTo(null);
         game.setVisible(true);

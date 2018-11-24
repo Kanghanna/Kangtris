@@ -8,19 +8,16 @@ import javax.swing.JFrame;
 import java.awt.*;
 
 public class game extends JFrame {
-	JFrame g = new JFrame();
-	game() {
+	/*game() {
 		setTitle("테트리스 화면");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
 		c.setLayout(new FlowLayout());
-		ImageIcon img = new ImageIcon("C:\\Users\\namhee\\Desktop\\game.jpg"); 
+		ImageIcon img = new ImageIcon("C:\\java_study2\\Kangtris\\src\\images\\game.jpg"); 
 		JLabel imageLabel = new JLabel(img); 
  		c.add(imageLabel);
 		setSize(360,550);
 		setVisible(true);
-	}
-	public static void main(String [] args) {
-		new game();
-	}
+		setResizable(false);
+	}*/
 }

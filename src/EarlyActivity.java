@@ -47,9 +47,7 @@ public class EarlyActivity extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				//new game();
-				Tetris game = new Tetris();
-		        game.setLocationRelativeTo(null);
-		        game.setVisible(true);
+				new option();
 			}   	
         });
         
@@ -81,14 +79,7 @@ class ways extends JFrame{
 		JLabel imageLabel = new JLabel(img); 
  		c.add(imageLabel);
 		setSize(360,550);
-		setVisible(true);  
-
-		/*
-		JPanel game = new JPanel();
-    	setContentPane(game);
-    	setSize(360,550);
-    	setResizable(false);
-    	setVisible(true);
-    	*/
+		setVisible(true);
+		setResizable(true);
     }
 }

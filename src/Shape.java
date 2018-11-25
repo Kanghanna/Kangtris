@@ -10,12 +10,11 @@ public class Shape {
 
     private Tetrominoes pieceShape;
     private int coords[][];
-    private int[][][] coordsTable;//HOLDS ALL POSSIBLE COORDINATES OF TETRIS PIECE
-
+    private int[][][] coordsTable;
 
     public Shape() {
 
-        coords = new int[4][2];//HOLDS COORDINATES OF TETRIS PIECE
+        coords = new int[4][2];
         setShape(Tetrominoes.NoShape);
 
     }
@@ -35,8 +34,7 @@ public class Shape {
 
         for (int i = 0; i < 4 ; i++) {
             for (int j = 0; j < 2; ++j) {
-                coords[i][j] = coordsTable[shape.ordinal()][i][j];//ordinal():returns the current position of the enum type
-                ///////////////////////////////////////////////////in the enum object
+                coords[i][j] = coordsTable[shape.ordinal()][i][j];
             }
         }
         pieceShape = shape;

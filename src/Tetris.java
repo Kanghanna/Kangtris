@@ -1,15 +1,16 @@
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-//
 public class Tetris extends JFrame {
 
     JLabel statusbar;
-
+    Board board;
 
     public Tetris() {
         statusbar = new JLabel(" 0");
@@ -17,6 +18,7 @@ public class Tetris extends JFrame {
         Board board = new Board(this);
         add(board);
         board.start();
+        	
         board.setBackground(Color.BLACK);
 
         setSize(360, 550);
